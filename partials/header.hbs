@@ -1,0 +1,49 @@
+
+    <header class="h-auto lg:h-16 bg-indigo-300 flex lg:items-center 2xl:h-18">
+      <div class="container flex lg:items-center mx-auto">
+        <nav class="flex-grow h-auto lg:h-16 lg:flex w-full lg:justify-between"> 
+          <div class="flex flex-none justify-between">
+            <a href="#" class="flex items-center">
+              <img src="/assets/imgs/logos/solanin.png" class="pl-1 h-14 w-auto xl:h-14 2xl:h-14">
+              <h class="pl-2 text-3xl 2xl:text-4xl">Solanin</h>
+            </a>   
+              <button class="block lg:hidden" id="menu-toggle">
+                <i class="fa-solid fa-bars fa-3x p-2"></i>
+              </button>
+          </div>
+          <ul class="hidden h-full flex-grow justify-center p-3 lg:p-0 lg:flex-none px-5 ml-auto lg:flex lg:justify-between" id="navbar-default">
+            <a href="/"><li class="flex justify-center items-center h-16 lg:h-full px-6 hover:bg-indigo-200 text-2xl">Home</li></a>
+            <a href="/#blog"><li class="flex justify-center items-center h-16 lg:h-full px-6 hover:bg-indigo-200 text-2xl">Blog</li></a>
+            <a href="/projects"><li class="flex justify-center items-center h-16 lg:h-full px-6 hover:bg-indigo-200 text-2xl">Projects</li></a>
+            <a href="/my-cv"><li class="flex justify-center items-center h-16 lg:h-full px-6 hover:bg-indigo-200 text-2xl">My&nbsp;CV</li></a>
+            <a href="/contact"><li class="flex justify-center items-center h-16 lg:h-full px-6 hover:bg-indigo-200 text-2xl">Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar-default');
+    
+        menuToggle.addEventListener('click', () => {
+          navbar.classList.toggle('hidden');
+        });
+      </script>
+    </header>
+    <section>
+      <div id="cookie-notice" class="fixed bottom-0 left-0 w-full p-4 bg-gray-200 text-center" style="display: none;">
+        <span class="mr-2">This website uses cookies to ensure you get the best experience on our website.</span>
+        <a href="/cookie-policy" class="text-blue-500">Learn more</a>
+        <button id="accept-cookies" class="bg-blue-500 text-white ml-2 px-4 py-2 rounded">Accept</button>
+      </div>
+      <script>
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+          document.getElementById('cookie-notice').style.display = 'none';
+          sessionStorage.setItem('cookieConsent', 'true');
+        });
+        if (sessionStorage.getItem('cookieConsent')) {
+          document.getElementById('cookie-notice').style.display = 'none';
+        }else{
+	  document.getElementById('cookie-notice').style.display = 'block';
+	}
+      </script>
+    </section>

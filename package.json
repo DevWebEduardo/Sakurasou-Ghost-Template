@@ -1,0 +1,16 @@
+{
+    "name": "Solanin",
+    "description": "Welcome to Solanin development blog! Discover our projects and find out what's new.",
+    "version": "2.0.0",
+    "engines": {
+      "ghost": ">=5.0.0"
+  },
+    "author": {
+      "name": "Eduardo da Silva Queiroz",
+      "url": "www.Solanin.com.br",
+      "email": "devweb.eduardo@gmail.com"
+    },
+    "config": {
+      "post_per_page": 12
+    }
+}

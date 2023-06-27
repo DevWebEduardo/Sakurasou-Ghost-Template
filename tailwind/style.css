@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+	html {
+		background: url("../imgs/background.png") repeat;
+		background-color: rgb(241, 245, 249);
+	}
+	
+	.kg-width-full {
+	  width: 100%;
+	}
+	
+	.kg-width-wide {
+	  max-width: 100%;
+	}
+}
