@@ -688,10 +688,6 @@ video {
   width: 91.666667%;
 }
 
-.w-14 {
-  width: 3.5rem;
-}
-
 .w-2\/5 {
   width: 40%;
 }
@@ -997,6 +993,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1292,10 +1293,6 @@ video {
     width: 16.666667%;
   }
 
-  .xl\:w-16 {
-    width: 4rem;
-  }
-
   .xl\:w-3\/12 {
     width: 25%;
   }
@@ -1332,6 +1329,11 @@ video {
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
