@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-  		"../*.hbs",
-  		"../partials/*.hbs",
+  		"../*.{hbs, html}",
+  		"../partials/*.{hbs, html}",
   	   ],
   purge: {
     options: {
