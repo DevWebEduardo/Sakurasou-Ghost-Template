@@ -1,4 +1,4 @@
-**Solanin-Ghost-Theme**
+**Solanin-Ghost-Theme - Deprecated**
 <br><br>
 This Ghost CMS theme was created with the intention of serving as a personal portfolio/CV and programming/tech blog. It is designed to showcase your skills and expertise in a simple yet elegant manner.
 <br><br>
